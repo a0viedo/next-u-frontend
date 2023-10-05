@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: Next-u deployment class
+    runtime: static
+    buildCommand: yarn build
+    staticPublishPath: ./public
