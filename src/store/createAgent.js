@@ -1,4 +1,4 @@
-const API_ROOT = "https://api.realworld.io/api";
+const API_ROOT = "https://next-u-backend-complete.onrender.com/api";
 
 const encode = encodeURIComponent;
 
