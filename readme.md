@@ -25,5 +25,5 @@ To create a production build:
 - `npm run build` creates a development build, with all source compiled into ./public/ folder
 
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/a0viedo/realworld-frontend)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/a0viedo/next-u-frontend)
 
