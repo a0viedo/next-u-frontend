@@ -10,6 +10,7 @@ export default function createAuth(agent, actions, setState) {
       if (errors) throw errors;
       actions.setToken(user.token);
       setLoggedIn(true);
+      mutate(user);
     },
     async register(username, email, password) {
       const { user, errors } = await agent.Auth.register(username, email, password);
@@ -19,7 +20,8 @@ export default function createAuth(agent, actions, setState) {
     },
     logout() {
       batch(() => {
-        setState({ token: undefined });
+        actions.setToken(undefined);
+        setLoggedIn(false);
         mutate(undefined);
       })
     },
